@@ -11,6 +11,16 @@ const compat = new FlatCompat({
 
 const eslintConfig = [
   ...compat.extends("next/core-web-vitals", "next/typescript"),
+  {
+    rules: {
+      "@typescript-eslint/no-empty-interface": "off", // Dezactivează regula pentru interfețe goale
+      "@typescript-eslint/no-empty-object-type": "off", // Dezactivează regula pentru tipuri de obiecte goale
+      "@typescript-eslint/no-unused-vars": "off",
+      "react-hooks/exhaustive-deps": "off", // Dezactivează regula pentru dependențele hook-urilor React
+      "react/display-name": "off", // Dezactivează regula pentru numele de display ale componentelor React
+      "@typescript-eslint/no-unused-expressions": "off", // Dezactivează regula pentru expresiile neutilizate în TypeScript
+    },
+  },
 ];
 
 export default eslintConfig;

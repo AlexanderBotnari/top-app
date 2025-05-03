@@ -1,0 +1,23 @@
+.container{
+    background-color: var(--primary);
+    color: var(--white);
+    padding: 25px 30px;
+    display: grid;
+    grid-template-columns: 1fr auto auto;
+    gap: 40px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 20px;
+}
+
+.container a:hover{
+    color: var(--gray-light);
+}
+
+@media (max-width: 768px){
+    .container{
+        grid-template-columns: 1fr;
+        gap: 10px;
+        text-align: center;
+    }
+}
